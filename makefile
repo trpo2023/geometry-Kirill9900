@@ -1,3 +1,3 @@
-all: helloworld
-helloworld: helloworld.c
-	gcc -Wall -Werror -o helloworld helloworld.c
+all: geometry
+helloworld: geometry.c
+	gcc -Wall -Werror -o geometry geometry.c
