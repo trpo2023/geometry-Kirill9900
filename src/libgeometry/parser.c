@@ -6,7 +6,7 @@
 void take_info_circle(Circle* circle, int* column, FILE* file)
 {
     get_point(&circle->point, column, file);
-    expect(',', column, EXPECT_COMMA, file);
+    get_expect_token(',', column, EXPECT_COMMA, file);
 
     circle->radius = get_number(column, file);
 
