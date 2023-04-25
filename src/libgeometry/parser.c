@@ -10,9 +10,9 @@ void take_info_circle(Circle* circle, int* column, FILE* file)
 
     circle->radius = get_number(column, file);
 
-    expect(')', column, BACK_BRACE, file);
+    get_expect_token(')', column, BACK_BRACE, file);
 
-    line_ending(column, file);
+    end_of_line(column, file);
 }
 
 void show_info_circle(Circle* circle)
